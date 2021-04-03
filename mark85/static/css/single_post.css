@@ -1,0 +1,304 @@
+.post-btn{
+    padding: 5px 10px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+/** Header Style Start **/
+
+.header{
+    height: 60px;
+    background: #0082e6;
+    padding: 0 20px;
+    color: #fff;
+    
+  }
+  .logo{
+    line-height: 60px;
+    float: left;
+  }
+  
+  .menu{
+    float: right;
+    line-height: 60px;
+  }
+  .menu a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: 0.4s;
+  }
+  .show-menu-btn,.hide-menu-btn{
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  .show-menu-btn{
+    float: right;
+  }
+  .show-menu-btn i{
+    line-height: 60px;
+  }
+  .menu a:hover,
+  .show-menu-btn:hover,
+  .hide-menu-btn:hover{
+    color: red;
+  
+  }
+  
+  #chk{
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+  }
+  .labels{
+    padding-top: 20px;
+  }
+  .contentheader{
+    padding: 0 20px;
+    padding-bottom: 20px;
+    margin:20px;
+    border-radius: 4px;
+    border: 3px solid blue;
+    -webkit-box-shadow: 0 1px 3px #333;
+    -moz-box-shadow: 0 1px 3px #333;
+    box-shadow: 0 1px 3px #333;
+  
+  }
+  .labels-info{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+  }
+  .labels-info a{
+      color:#322514;
+    text-decoration: none !important;
+  }
+  .contentheader img{
+    width: 100%;
+    max-width: 700px;
+    margin: 20px 0;
+  }
+  .contentheader p{
+    text-align: justify;
+  }
+
+/** Header Style End **/
+
+
+
+
+
+
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+
+} */
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.content{
+    width:90%;
+    margin:30px auto 30px;
+}
+.content .main-content{
+    width: 70%;
+    float: left;
+}
+.content .main-content .post{
+    width: 90%;
+    height: 930px;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: whitesmoke;
+    position: relative;
+}
+.some{
+    text-align: justify;
+    padding: 10px 20px;
+}
+/* .content .main-content .post .read-more{
+ position: absolute;
+ bottom: 10px;
+ right: 10px;
+ border: 1px solid blue;
+ background: transparent;
+ border-radius: 0px;
+ color: blue !important;
+} */
+/* .content .main-content .post .read-more:hover{
+    background: grey;
+    color: white !important;
+    transition: .25s;
+}
+.content .main-content .post .post-image{
+    width:45%;
+    height:100%;
+    float: left;
+    border-radius: 5px;
+}
+.content .main-content .post .post-preview{
+    width: 55%;
+    padding: 10px;
+    float: right;
+} */
+.content .main-content .recent-post-title{
+    margin-left:20px;
+} 
+
+.content .sidebar{
+    width: 30%;
+    float: left;
+    
+}
+.content .sidebar .section{
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.content .sidebar .section .section-title{
+    margin: 10px 0px 10px 0px;
+}
+.content .sidebar .section.search{
+    margin-top: 70px;
+}
+.content .sidebar .section.topics ul{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border-top: 1px solid lightgrey;
+}
+.content .sidebar .section.topics ul li a{
+    display: block;
+    padding: 15px 0px 15px 0px;
+    border-bottom: 1px solid grey;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+.content .sidebar .section.topics ul li a:hover{
+   padding-left: 10px;
+   transition: all 0.3s;
+}
+.btn{
+    padding: .5rem 1rem;
+    background: red;
+    color: green;
+    border:1px solid transparent;
+    border-radius: .25rem;
+}
+.btn:hover{
+    color: white;
+    background: blue;
+}
+.text-input{
+    padding: .7rem 1rem;
+    display: block;
+    width:100%;
+    border-radius: 5px;
+    border: 1px solid wheat;
+    outline: none;
+    color:grey;
+    line-height:  1.5rem;
+    font-size: 1.0em;
+}
+
+
+/** Media Queries **/
+
+
+@media only screen and (max-width: 800px){
+    .content{
+    width: 95%;
+}
+.content .main-content .post{
+    max-width: 100%;
+    background-color: green;
+
+}
+    .content .main-content{
+        width: 100%;
+        /* padding: 10px; */
+    }
+    .content .sidebar{
+        width: 100%;
+        /* padding: 10px; */
+        
+    }
+    .content .sidebar .section.search{
+        margin-top: 0px;
+    }
+    
+}
+
+@media only screen and (max-width: 800px){
+    .content .main-content .post{
+        height: auto;
+    }
+    .content .main-content .post .post-image{
+        width: 100%;
+    }
+    .content .main-content .post .post-preview{
+        width: 100%;
+    }
+    .content .main-content .post .read-more{
+        position: static;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/** Header Media Queries **/
+@media screen and (max-width:800px) {
+    .show-menu-btn,.hide-menu-btn{
+      display: block;
+    }
+    .menu{
+      position: fixed;
+      width: 100%;
+      height: 350px;
+      background: #333;
+      right: -100%;
+      top: 0;
+      text-align: center;
+      padding: 60px 0;
+      line-height: normal;
+      transition: 0.7s;
+        z-index: 99999;
+    }
+    .menu a{
+      display: block;
+      padding: 20px;
+    }
+    .hide-menu-btn{
+      position: absolute;
+      top: 20px;
+      right: 40px;
+    }
+    #chk:checked ~ .menu{
+      right: 0;
+    }
+  }
+
+/** Header Media Queries End **/
+
+/** Footer Style with Media Queries Start **/
+
+
+
+/** Footer Style with Media Queries End **/
